@@ -3,13 +3,13 @@ import { PostFinanceLogo } from "./PostFinanceLogo";
 
 export function Header() {
   return (
-    <header className="relative sticky top-0 lg:border-none z-50 flex justify-center bg-pf-yellow-3 dark:bg-pf-petrol-8 h-[50px] md:h-20">
+    <header className="relative sticky top-0 lg:border-none z-50 flex justify-center bg-pf-yellow-3 dark:bg-pf-petrol-8 h-[13vw] min-h-[50px] max-h-20 md:h-20">
       <div className="flex items-center gap-3 sm:gap-5 w-full max-w-6xl mx-3 sm:mx-5 xl:mx-auto justify-between">
         {/* Logo */}
         <div className="flex items-center shrink-0">
           <a
             href="https://www.postfinance.ch/"
-            className="flex h-[50px] md:h-[80px] items-center justify-center"
+            className="flex h-[13vw] min-h-[50px] max-h-20 md:h-[80px] items-center justify-center"
             target="_self"
             aria-label="PostFinance - Retour à l'accueil"
           >

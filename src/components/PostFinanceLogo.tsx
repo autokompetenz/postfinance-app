@@ -1,4 +1,4 @@
-export function PostFinanceLogo({ className = "h-7 md:h-10 w-auto" }: { className?: string }) {
+export function PostFinanceLogo({ className = "h-[5.5vw] min-h-7 max-h-10 md:h-10 w-auto" }: { className?: string }) {
   return (
     <svg role="img" aria-labelledby="logo-title" className={className} viewBox="100 100 1000 147">
       <title id="logo-title">PostFinance</title>
