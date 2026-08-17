@@ -11,15 +11,7 @@ export function LoginPage() {
         </h1>
       </div>
 
-      {/* Remboursement banner */}
-      <div className="mb-5 flex items-center gap-3 rounded-xl bg-pf-yellow-3 px-5 py-4 text-pf-petrol-11 shadow-sm">
-        <span className="text-2xl font-bold">80 CHF</span>
-        <span className="text-sm leading-tight">
-          Remboursement offert sur votre première utilisation d'e-finance.
-        </span>
-      </div>
-
-      {/* Sidebar layout: form + sidebar */}
+{/* Sidebar layout: form + sidebar */}
       <div className="flex flex-col gap-5 xl:grid xl:grid-cols-[1fr_280px] xl:gap-6">
         {/* Main card */}
         <div className="h-fit">
