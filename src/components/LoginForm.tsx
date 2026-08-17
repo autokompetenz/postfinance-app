@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { EyeIcon, EyeOffIcon, InfoIcon, ChevronRightIcon } from "./icons";
+import { useI18n } from "../i18n/I18nContext";
 
 export function LoginForm() {
+  const { t } = useI18n();
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [userId, setUserId] = useState("");
@@ -20,7 +22,7 @@ export function LoginForm() {
             htmlFor="p_username"
             className="text-sm font-bold mb-3 text-pf-petrol-8"
           >
-            Numéro e-finance / nom d'utilisateur
+            {t("usernameLabel")}
             <span className="fpui-info-icon ml-1.5 inline-flex align-middle dark:text-pf-blue-2">
               <InfoIcon size={14} />
             </span>
@@ -44,7 +46,7 @@ export function LoginForm() {
             htmlFor="p_passw"
             className="text-sm font-bold mb-3 text-pf-petrol-8"
           >
-            Mot de passe
+            {t("passwordLabel")}
           </label>
           <div className="relative">
             <input
@@ -61,7 +63,7 @@ export function LoginForm() {
               type="button"
               className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center justify-center w-11 h-11 min-w-[44px] min-h-[44px] text-pf-petrol-8 dark:text-pf-petrol-3 hover:text-pf-petrol-7 transition-colors"
               onClick={() => setShowPassword(!showPassword)}
-              aria-label={showPassword ? "Masquer le mot de passe" : "Afficher le mot de passe"}
+              aria-label={showPassword ? t("hidePassword") : t("showPassword")}
             >
               {showPassword ? (
                 <EyeOffIcon size={24} />
@@ -79,7 +81,7 @@ export function LoginForm() {
             className="fpui-link-arrow text-pf-petrol-8 min-h-[44px] py-1"
           >
             <span className="flex gap-3 items-center flex-grow min-w-0">
-              Mot de passe oublié?
+              {t("forgotPassword")}
             </span>
             <ChevronRightIcon size={24} />
           </a>
@@ -89,7 +91,7 @@ export function LoginForm() {
         <fieldset>
           <legend>
             <h2 className="mb-2 !leading-[1.2] text-xl tracking-normal text-pf-petrol-8 font-normal">
-              Si disponible
+              {t("optionalTitle")}
             </h2>
           </legend>
 
@@ -98,7 +100,7 @@ export function LoginForm() {
               htmlFor="p_userid"
               className="text-sm font-bold mb-3 text-pf-petrol-8"
             >
-              Identification de l'utilisateur
+              {t("userIdLabel")}
               <span className="fpui-info-icon ml-1.5 inline-flex align-middle dark:text-pf-blue-2">
                 <InfoIcon size={14} />
               </span>
@@ -121,7 +123,7 @@ export function LoginForm() {
               type="submit"
               className="fpui-btn-primary w-full md:w-auto md:px-8"
             >
-              Suivant
+              {t("next")}
             </button>
           </div>
         </fieldset>
