@@ -33,6 +33,15 @@
   --font-family-grostek: "Grostek", system-ui, -apple-system, sans-serif;
 }
 
+/* === Root variables (iOS Safari fallback) === */
+:root {
+  --color-pf-yellow-3: #ffcc00;
+  --color-pf-petrol-1: #eef6f6;
+  --color-pf-petrol-8: #004b5a;
+  --color-pf-petrol-11: #001b1f;
+  --font-family-grostek: "Grostek", system-ui, -apple-system, sans-serif;
+}
+
 /* === Base === */
 *,
 *::before,
@@ -52,6 +61,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  background-color: #eef6f6;
   background-color: var(--color-pf-petrol-1);
   color: var(--color-pf-grey-7);
 }
