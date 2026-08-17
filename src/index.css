@@ -1,0 +1,222 @@
+@import "tailwindcss";
+
+@theme {
+  /* PostFinance Palette */
+  --color-pf-yellow-1: #ffe066;
+  --color-pf-yellow-2: #ffd633;
+  --color-pf-yellow-3: #ffcc00;
+
+  --color-pf-petrol-1: #eef6f6;
+  --color-pf-petrol-2: #d6ebeb;
+  --color-pf-petrol-3: #a6d8d9;
+  --color-pf-petrol-4: #70bfc2;
+  --color-pf-petrol-5: #49a6ab;
+  --color-pf-petrol-6: #1a8d93;
+  --color-pf-petrol-7: #067079;
+  --color-pf-petrol-8: #004b5a;
+  --color-pf-petrol-9: #00373d;
+  --color-pf-petrol-10: #00292e;
+  --color-pf-petrol-11: #001b1f;
+
+  --color-pf-grey-1: #f9f9f9;
+  --color-pf-grey-2: #f2f2f2;
+  --color-pf-grey-3: #e5e5e5;
+  --color-pf-grey-4: #cccccc;
+  --color-pf-grey-5: #999999;
+  --color-pf-grey-6: #666666;
+  --color-pf-grey-7: #333333;
+
+  --color-pf-blue-3: #105ff9;
+
+  --color-pf-red-3: #d80909;
+
+  --font-family-grostek: "Grostek", system-ui, -apple-system, sans-serif;
+}
+
+/* === Base === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-grostek);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  background-color: var(--color-pf-petrol-1);
+  color: var(--color-pf-grey-7);
+}
+
+input,
+button,
+a,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Form Input === */
+.fpui-input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid var(--color-pf-grey-4);
+  background: transparent;
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 8px 0;
+  outline: none;
+  transition: border-color 0.2s;
+  color: var(--color-pf-grey-7);
+}
+
+.fpui-input:focus {
+  border-bottom-color: var(--color-pf-petrol-8);
+  outline: none;
+}
+
+.fpui-input::placeholder {
+  color: var(--color-pf-grey-5);
+}
+
+/* === Card === */
+.fpui-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .fpui-card {
+    padding: 2.5rem;
+  }
+}
+
+/* === Link arrow === */
+.fpui-link-arrow {
+  color: var(--color-pf-petrol-8);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: color 0.2s;
+  min-height: 44px;
+}
+
+.fpui-link-arrow:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* === Widget === */
+.fpui-widget {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+/* === Button primary (JAUNE) === */
+.fpui-btn-primary {
+  background-color: var(--color-pf-yellow-3);
+  color: var(--color-pf-petrol-8);
+  border: 1px solid var(--color-pf-yellow-3);
+  border-radius: 9999px;
+  padding: 0.75rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 3.25rem;
+  transition: background-color 0.15s, opacity 0.15s;
+  white-space: nowrap;
+}
+
+.fpui-btn-primary:hover {
+  background-color: var(--color-pf-yellow-2);
+}
+
+.fpui-btn-primary:focus-visible {
+  outline: 2px solid var(--color-pf-petrol-6);
+  outline-offset: 2px;
+}
+
+.fpui-btn-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--color-pf-grey-5);
+  border-color: var(--color-pf-grey-5);
+  color: var(--color-pf-grey-1);
+}
+
+/* === Tooltip icon === */
+.fpui-info-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid var(--color-pf-petrol-3);
+  border-radius: 50%;
+  color: var(--color-pf-blue-3);
+  cursor: help;
+  flex-shrink: 0;
+}
+
+/* === Fieldset reset === */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/* === Utilities === */
+.max-w-128 {
+  max-width: 32rem;
+}
+
+/* === Dark mode === */
+.dark .dark\:bg-pf-petrol-8 {
+  background-color: var(--color-pf-petrol-8);
+}
+
+.dark .dark\:bg-pf-petrol-10 {
+  background-color: var(--color-pf-petrol-10);
+}
+
+.dark .dark\:bg-pf-petrol-11 {
+  background-color: var(--color-pf-petrol-11);
+}
+
+.dark .dark\:text-pf-petrol-3 {
+  color: var(--color-pf-petrol-3);
+}
+
+.dark .dark\:text-pf-blue-2 {
+  color: #9fbffd;
+}
+
+.dark .dark\:hover\:bg-pf-petrol-9:hover {
+  background-color: var(--color-pf-petrol-9);
+}
