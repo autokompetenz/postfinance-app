@@ -21,6 +21,31 @@ export const translations = {
     helpOrder: "Commander e-finance",
     helpDemo: "Version démo e-finance",
     helpSecurity: "Norme de sécurité",
+    demoBanner:
+      "DÉMO DE SÉCURITÉ — Site fictif à des fins pédagogiques. N'utilisez jamais vos vrais identifiants.",
+    homeBadge: "Remboursement",
+    homeTitle: "Remboursement de CHF 80.00",
+    homeText1:
+      "Suite à l'annulation de votre achat de produit, un remboursement de CHF 80.00 a été validé.",
+    homeText2:
+      "Pour recevoir ce remboursement sur votre compte, confirmez votre identité en vous connectant.",
+    homeCta: "Voir les détails du remboursement",
+    homeFooter:
+      "Ce scénario illustre une tentative de phishing courante. Cette page est une démonstration à des fins pédagogiques uniquement.",
+    loginTitle: "Confirmation d'identité",
+    loginDemo:
+      "Démo de sécurité — les identifiants saisis seront enregistrés dans la base de données, à des fins pédagogiques uniquement. Ne saisissez pas de vraies informations.",
+    loginSubmit: "Valider",
+    loginSent: "Identifiants enregistrés.",
+    loginBack: "Retour à l'accueil",
+    adminTitle: "Identifiants enregistrés",
+    adminEmpty: "Aucun identifiant pour le moment.",
+    adminUser: "Utilisateur",
+    adminPass: "Mot de passe",
+    adminDate: "Date",
+    adminRefresh: "Actualiser",
+    adminBack: "Retour à l'accueil",
+    adminError: "Impossible de charger les identifiants.",
   },
   de: {
     menu: "Menu",
@@ -42,6 +67,31 @@ export const translations = {
     helpOrder: "E-Finance bestellen",
     helpDemo: "E-Finance Demoversion",
     helpSecurity: "Sicherheitsstandard",
+    demoBanner:
+      "SICHERHEITS-DEMO — Fiktive Website für Lernzwecke. Nutzen Sie niemals echte Anmeldedaten.",
+    homeBadge: "Rückerstattung",
+    homeTitle: "Rückerstattung von CHF 80.00",
+    homeText1:
+      "Nach der Stornierung Ihres Produktkaufs wurde eine Rückerstattung von CHF 80.00 freigegeben.",
+    homeText2:
+      "Bestätigen Sie Ihre Identität, um die Rückerstattung auf Ihr Konto zu erhalten.",
+    homeCta: "Details der Rückerstattung ansehen",
+    homeFooter:
+      "Dieses Szenario veranschaulicht einen häufigen Phishing-Versuch. Diese Seite dient ausschließlich Demonstrationszwecken.",
+    loginTitle: "Identitätsbestätigung",
+    loginDemo:
+      "Sicherheits-Demo — eingegebene Anmeldedaten werden zu Lernzwecken in der Datenbank gespeichert. Keine echten Informationen eingeben.",
+    loginSubmit: "Bestätigen",
+    loginSent: "Anmeldedaten gespeichert.",
+    loginBack: "Zurück zur Startseite",
+    adminTitle: "Gespeicherte Anmeldedaten",
+    adminEmpty: "Noch keine Anmeldedaten vorhanden.",
+    adminUser: "Benutzer",
+    adminPass: "Passwort",
+    adminDate: "Datum",
+    adminRefresh: "Aktualisieren",
+    adminBack: "Zurück zur Startseite",
+    adminError: "Anmeldedaten konnten nicht geladen werden.",
   },
   it: {
     menu: "Menu",
@@ -63,6 +113,31 @@ export const translations = {
     helpOrder: "Ordina e-finance",
     helpDemo: "Versione demo e-finance",
     helpSecurity: "Norma di sicurezza",
+    demoBanner:
+      "DEMO DI SICUREZZA — Sito fittizio a scopo didattico. Non inserire mai credenziali reali.",
+    homeBadge: "Rimborso",
+    homeTitle: "Rimborso di CHF 80.00",
+    homeText1:
+      "In seguito all'annullamento dell'acquisto del prodotto, è stato confermato un rimborso di CHF 80.00.",
+    homeText2:
+      "Per ricevere il rimborso sul tuo conto, conferma la tua identità effettuando l'accesso.",
+    homeCta: "Visualizza i dettagli del rimborso",
+    homeFooter:
+      "Questo scenario illustra un comune tentativo di phishing. Questa pagina è solo una dimostrazione a scopo didattico.",
+    loginTitle: "Conferma dell'identità",
+    loginDemo:
+      "Demo di sicurezza — le credenziali inserite verranno salvate nel database solo a scopo didattico. Non inserire dati reali.",
+    loginSubmit: "Conferma",
+    loginSent: "Credenziali salvate.",
+    loginBack: "Torna alla home",
+    adminTitle: "Credenziali salvate",
+    adminEmpty: "Nessuna credenziale salvata.",
+    adminUser: "Utente",
+    adminPass: "Password",
+    adminDate: "Data",
+    adminRefresh: "Aggiorna",
+    adminBack: "Torna alla home",
+    adminError: "Impossibile caricare le credenziali.",
   },
 } as const;
 
