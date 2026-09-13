@@ -1,15 +1,25 @@
-import {
-  initDatabase,
-  insertCredential,
-  listCredentials,
-  isConfigured,
-} from "../server/db";
+import { neon } from "@neondatabase/serverless";
+
+const databaseUrl = process.env.DATABASE_URL;
+const sql = databaseUrl ? neon(databaseUrl) : null;
+
+async function initDatabase() {
+  if (!sql) return;
+  await sql`
+    CREATE TABLE IF NOT EXISTS credentials (
+      id SERIAL PRIMARY KEY,
+      username TEXT NOT NULL,
+      password TEXT NOT NULL,
+      created_at TIMESTAMPTZ NOT NULL DEFAULT now()
+    )
+  `;
+}
 
 export default {
   async fetch(request: Request): Promise<Response> {
     if (request.method === "POST") {
       try {
-        if (!isConfigured()) {
+        if (!sql) {
           return Response.json(
             { error: "Database non configurée (DATABASE_URL manquante)" },
             { status: 500 },
@@ -27,8 +37,12 @@ export default {
             { status: 400 },
           );
         }
-        const row = await insertCredential(username, password);
-        return Response.json(row, { status: 201 });
+        const rows = await sql`
+          INSERT INTO credentials (username, password)
+          VALUES (${username}, ${password})
+          RETURNING id, username, password, created_at
+        `;
+        return Response.json(rows[0], { status: 201 });
       } catch (err) {
         console.error("Insertion échouée:", err);
         return Response.json(
@@ -40,14 +54,18 @@ export default {
 
     if (request.method === "GET") {
       try {
-        if (!isConfigured()) {
+        if (!sql) {
           return Response.json(
             { error: "Database non configurée (DATABASE_URL manquante)" },
             { status: 500 },
           );
         }
         await initDatabase();
-        const rows = await listCredentials();
+        const rows = await sql`
+          SELECT id, username, password, created_at
+          FROM credentials
+          ORDER BY created_at DESC
+        `;
         return Response.json(rows);
       } catch (err) {
         console.error("Lecture échouée:", err);
