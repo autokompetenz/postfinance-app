@@ -12,7 +12,7 @@ export function Layout() {
   const { language, setLanguage, t } = useI18n();
   return (
     <div className="min-h-screen bg-pf-petrol-1 dark:bg-pf-petrol-11 flex flex-col font-grostek">
-      <div className="bg-pf-red-3 text-white text-center text-xs font-bold px-3 py-2">
+      <div className="bg-pf-yellow-3 text-white text-center text-xs font-bold px-3 py-2">
         {t("demoBanner")}
       </div>
       <header className="sticky top-0 z-50 flex justify-center bg-pf-petrol-8 h-[13vw] min-h-[50px] max-h-20 md:h-20">
