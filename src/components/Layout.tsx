@@ -17,15 +17,15 @@ export function Layout() {
       </div>
       <header className="sticky top-0 z-50 flex justify-center bg-pf-petrol-8 h-[13vw] min-h-[50px] max-h-20 md:h-20">
         <div className="flex items-center gap-3 sm:gap-5 w-full max-w-6xl mx-3 sm:mx-5 xl:mx-auto justify-between">
-          <div className="flex items-center shrink-0">
-            <Link
-              to="/"
-              className="flex h-[13vw] min-h-[50px] max-h-20 md:h-[80px] items-center justify-center text-white font-bold text-lg"
-              aria-label="Accueil"
-            >
-              POSTFINANCE
-            </Link>
-          </div>
+         <div className="flex items-center shrink-0">
+          <Link
+            to="/"
+            className="flex h-[13vw] min-h-[50px] max-h-20 md:h-[80px] items-center justify-center text-[#FFCC00] font-bold text-lg"
+            aria-label="Accueil"
+          >
+            POSTFINANCE
+          </Link>
+        </div>
           <div className="flex-1" />
           <nav className="flex items-center gap-1" aria-label="Changer de langue">
             {LANGUAGES.map((lang) => (
