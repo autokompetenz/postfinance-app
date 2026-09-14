@@ -36,15 +36,6 @@ export function HomePage() {
       <p className="text-center text-xs text-pf-grey-5 mt-6">
         {t("homeFooter")}
       </p>
-
-      <div className="flex justify-center mt-4">
-        <Link
-          to="/admin"
-          className="text-xs text-pf-grey-5 underline underline-offset-2 hover:text-pf-petrol-8"
-        >
-          admin
-        </Link>
-      </div>
     </div>
   );
 }

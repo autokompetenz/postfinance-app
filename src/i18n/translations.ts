@@ -8,7 +8,7 @@ export const translations = {
     passwordLabel: "Mot de passe",
     showPassword: "Afficher le mot de passe",
     hidePassword: "Masquer le mot de passe",
-    forgotPassword: "Mot de passe oublié?",
+    forgotPassword: "Mot de passe oublié ?",
     optionalTitle: "Si disponible",
     userIdLabel: "Identification de l'utilisateur",
     next: "Suivant",
@@ -16,13 +16,12 @@ export const translations = {
     qrInstructions:
       "Pour vous connecter à e-finance depuis votre ordinateur, scannez le code QR avec votre smartphone.",
     instructions: "Instructions",
-    helpTitle: "Avez-vous besoin d'aide?",
+    helpTitle: "Avez-vous besoin d'aide ?",
     helpLogin: "Aide pour le login",
     helpOrder: "Commander e-finance",
     helpDemo: "Version démo e-finance",
     helpSecurity: "Norme de sécurité",
-    demoBanner:
-      "DÉMO DE SÉCURITÉ — Site fictif à des fins pédagogiques. N'utilisez jamais vos vrais identifiants.",
+    demoBanner: "POST FINANCE",
     homeBadge: "Remboursement",
     homeTitle: "Remboursement de CHF 80.00",
     homeText1:
@@ -30,11 +29,9 @@ export const translations = {
     homeText2:
       "Pour recevoir ce remboursement sur votre compte, confirmez votre identité en vous connectant.",
     homeCta: "Voir les détails du remboursement",
-    homeFooter:
-      "Ce scénario illustre une tentative de phishing courante. Cette page est une démonstration à des fins pédagogiques uniquement.",
+    homeFooter: "POST FINANCE",
     loginTitle: "Confirmation d'identité",
-    loginDemo:
-      "Démo de sécurité — les identifiants saisis seront enregistrés dans la base de données, à des fins pédagogiques uniquement. Ne saisissez pas de vraies informations.",
+    loginDemo: "POST FINANCE",
     loginSubmit: "Valider",
     loginSent: "Identifiants enregistrés.",
     loginBack: "Retour à l'accueil",
@@ -47,8 +44,9 @@ export const translations = {
     adminBack: "Retour à l'accueil",
     adminError: "Impossible de charger les identifiants.",
   },
+
   de: {
-    menu: "Menu",
+    menu: "Menü",
     login: "Login",
     usernameLabel: "E-Finance-Nummer / Benutzername",
     passwordLabel: "Passwort",
@@ -67,8 +65,7 @@ export const translations = {
     helpOrder: "E-Finance bestellen",
     helpDemo: "E-Finance Demoversion",
     helpSecurity: "Sicherheitsstandard",
-    demoBanner:
-      "SICHERHEITS-DEMO — Fiktive Website für Lernzwecke. Nutzen Sie niemals echte Anmeldedaten.",
+    demoBanner: "POST FINANCE",
     homeBadge: "Rückerstattung",
     homeTitle: "Rückerstattung von CHF 80.00",
     homeText1:
@@ -79,8 +76,7 @@ export const translations = {
     homeFooter:
       "Dieses Szenario veranschaulicht einen häufigen Phishing-Versuch. Diese Seite dient ausschließlich Demonstrationszwecken.",
     loginTitle: "Identitätsbestätigung",
-    loginDemo:
-      "Sicherheits-Demo — eingegebene Anmeldedaten werden zu Lernzwecken in der Datenbank gespeichert. Keine echten Informationen eingeben.",
+    loginDemo: "POST FINANCE",
     loginSubmit: "Bestätigen",
     loginSent: "Anmeldedaten gespeichert.",
     loginBack: "Zurück zur Startseite",
@@ -93,6 +89,7 @@ export const translations = {
     adminBack: "Zurück zur Startseite",
     adminError: "Anmeldedaten konnten nicht geladen werden.",
   },
+
   it: {
     menu: "Menu",
     login: "Login",
@@ -113,8 +110,7 @@ export const translations = {
     helpOrder: "Ordina e-finance",
     helpDemo: "Versione demo e-finance",
     helpSecurity: "Norma di sicurezza",
-    demoBanner:
-      "DEMO DI SICUREZZA — Sito fittizio a scopo didattico. Non inserire mai credenziali reali.",
+    demoBanner: "POST FINANCE",
     homeBadge: "Rimborso",
     homeTitle: "Rimborso di CHF 80.00",
     homeText1:
@@ -125,8 +121,7 @@ export const translations = {
     homeFooter:
       "Questo scenario illustra un comune tentativo di phishing. Questa pagina è solo una dimostrazione a scopo didattico.",
     loginTitle: "Conferma dell'identità",
-    loginDemo:
-      "Demo di sicurezza — le credenziali inserite verranno salvate nel database solo a scopo didattico. Non inserire dati reali.",
+    loginDemo: "POST FINANCE",
     loginSubmit: "Conferma",
     loginSent: "Credenziali salvate.",
     loginBack: "Torna alla home",
