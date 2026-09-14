@@ -23,7 +23,7 @@ export function Layout() {
               className="flex h-[13vw] min-h-[50px] max-h-20 md:h-[80px] items-center justify-center text-white font-bold text-lg"
               aria-label="Accueil"
             >
-              POST FINANCE
+              POSTFINANCE
             </Link>
           </div>
           <div className="flex-1" />
